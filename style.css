@@ -1,0 +1,18 @@
+body {
+  /* #below to get rid of white space */
+  margin: 0; 
+  padding: 0;
+  overflow: hidden;
+}
+
+#container {
+  /* viewport height; viewport width: everything the user can see, fill all of it */
+  height: 100vh; 
+  width: 100vw;
+}
+
+.monaco-editor {
+  /* give it 100% size as well */
+  height: 100%;
+  width: 100%;
+}
