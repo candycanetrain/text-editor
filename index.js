@@ -29,4 +29,5 @@ app.on('ready', () => {
     // send has channel, and args
     mainWindow.webContents.send('open-file', realPath);
   })
+  
 })
