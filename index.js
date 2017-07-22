@@ -3,6 +3,7 @@
 // const electron = require('electron')
 const {app, BrowserWindow} = require('electron')
 //same as: 
+// const app = require('electron').app
 const menu = require('./menu')
 
 app.on('ready', () => {
