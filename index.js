@@ -3,7 +3,7 @@
 // const electron = require('electron')
 const {app, BrowserWindow} = require('electron')
 //same as: 
-// const app = require('electron').app
+const menu = require('./menu')
 
 app.on('ready', () => {
   const mainWindow = new BrowserWindow({})
@@ -29,5 +29,6 @@ app.on('ready', () => {
     // send has channel, and args
     mainWindow.webContents.send('open-file', realPath);
   })
-  
+
+  menu.createMenu(mainWindow)
 })

@@ -21,7 +21,21 @@ loader().then((monaco) => {
     editor.setModel(monaco.editor.createModel(data, 'javascript'));
   })
 
-  ipcRenderer.on('')
+  ipcRenderer.on('save-file', (e, url) => {
+    console.log(url)
+    const data = editor.getModel()
+    let file = ''
+
+    data._lines.forEach((line) => {
+      file += line.text + '\n';
+      // file += line.text + data.model._EOL;
+      // 
+    })
+
+    console.log(file)
+
+    fs.writeFileSync(url, file, 'utf-8');
+  })
 
 
 })
