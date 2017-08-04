@@ -1,4 +1,4 @@
 What I've been working on: 
 
 
-![image](docs/gui.png)
+![image](docs/cool-editor-candra.png)
